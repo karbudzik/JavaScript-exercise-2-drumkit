@@ -1,0 +1,123 @@
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+/*GENERAL FORMATTING*/
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #ff6633;
+    background: #3b2c52;
+    text-shadow: 0 0 .5rem black;
+    width: 100%;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+/*MAIN LAYOUT*/
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.left {
+    flex: 2;
+}
+
+.right {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+/*DRUMKIT SECTION*/
+
+.drumkit {
+    height: 600px;
+    width: 705px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+    font-size: 8rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+/*BUTTONS*/
+
+.keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.key {
+    width: 220px;
+    height: 130px;
+    border: .2rem solid aliceblue;
+    margin: 0.7rem;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    background-color: #2b1b45;
+    transition: all .13s ease;
+}
+
+kbd {
+    display: block;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+    font-size: 5rem;
+}
+
+
+.sound {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: aliceblue;
+}
+
+/*ANIMATIONS*/
+
+.playing {
+    transform: scale(1.1);
+    background-color: #69fbff;
+    border: none;
+}
+
+/*BASIC RESPONSIVENESS*/
+
+@media all and (max-width: 1120px) {
+  .right {
+    display: none;
+  }
+}
