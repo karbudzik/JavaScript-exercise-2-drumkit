@@ -1,5 +1,5 @@
 # JavaScript exercise 2 - Drum Kit
-> My second practical project while learning JavaScript. [Click here to preview](#) 
+> My second practical project while learning JavaScript. [Click here to preview](https://karbudzik.github.io/JavaScript-exercise-2-drumkit/) 
 > Script based on the JavaScript30 challenge, with new visual layout.
 
 
